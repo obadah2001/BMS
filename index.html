@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .panel-body {
+            overflow-x: scroll;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table td, table th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        table th {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Battery Monitoring System</h1>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong>BMS Values</strong></h3>
+            </div>
+            <div class="panel-body">
+                <div id="container1"></div>
+                <table id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Temperature (in °C)</th>
+                            <th>Temperature (in °F)</th>
+                            <th>Humidity (in %)</th>
+                            <th>Voltage (in V)</th>
+                            <th>Current (in mA)</th>
+                            <th>Power (in W)</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
